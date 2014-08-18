@@ -20,25 +20,25 @@ class FeatureContext implements SnippetAcceptingContext
     }
 
     /**
-     * @Given I have a file named :arg1
+     * @Given I have a file named :file
      */
-    public function iHaveAFileNamed($arg1)
+    public function iHaveAFileNamed($file)
     {
         throw new PendingException();
     }
 
     /**
-     * @When I run :arg1
+     * @When I run :command
      */
-    public function iRun($arg1)
+    public function iRun($command)
     {
         throw new PendingException();
     }
 
     /**
-     * @Then I should see :arg1 in the output
+     * @Then I should see :text in the output
      */
-    public function iShouldSeeInTheOutput($arg1)
+    public function iShouldSeeInTheOutput($text)
     {
         throw new PendingException();
     }
