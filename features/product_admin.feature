@@ -5,6 +5,6 @@ Feature: Product admin
 
   Scenario: Seeing a list of existing products
     Given I am on "/"
-    When I follow "Admin"
-    And I follow "Products"
+    When I click "Admin"
+    And I click "Products"
     Then I should see "Showing All Products"

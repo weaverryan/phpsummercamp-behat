@@ -47,4 +47,12 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
             throw new \Exception('Could not find text '.$text);
         }
     }
+
+    /**
+     * @When I click :text
+     */
+    public function iClick($text)
+    {
+        $this->clickLink($text);
+    }
 }
