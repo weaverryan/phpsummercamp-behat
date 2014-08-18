@@ -1,0 +1,12 @@
+diff --git a/features/product_admin.feature b/features/product_admin.feature
+index 22718e7..eefceb2 100644
+--- a/features/product_admin.feature
++++ b/features/product_admin.feature
+@@ -15,5 +15,6 @@ Feature: Product admin
+     And I fill in "Name" with "New prod"
+     And I fill in "Price" with "9.99"
+     And I fill in "Body" with "cool new product!"
+-    And I press "Save"
++    And print last response
++    # And I press "Save"
+     Then I should see "Product created FTW"
