@@ -16,7 +16,7 @@ $app->get('/admin', function(\Silex\Application $app) {
     return $app['twig']->render('admin.twig');
 })->bind('admin');
 
-$app->get('/products', function(\Silex\Application $app) {
+$app->get('/admin/products', function(\Silex\Application $app) {
     return $app['twig']->render('products.twig', array(
         //'products' => $app['product_repository']->findAllPublished()
         'products' => $app['product_repository']->findAll()
@@ -24,7 +24,7 @@ $app->get('/products', function(\Silex\Application $app) {
 })
     ->bind('product_list');
 
-$app->get('/products/new', function(\Silex\Application $app) {
+$app->get('/admin/products/new', function(\Silex\Application $app) {
     // slows down the response, to challenge our Behat test! Silex is too fast otherwise!
     sleep(1);
 
@@ -37,7 +37,7 @@ $app->get('/products/new', function(\Silex\Application $app) {
 })
     ->bind('product_new');
 
-$app->post('/products/new', function(\Silex\Application $app, Request $request) {
+$app->post('/admin/products/new', function(\Silex\Application $app, Request $request) {
     // really quick (but dangerous) way to load my data into a Product
 
     /** @var $product Product */
