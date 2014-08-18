@@ -28,7 +28,12 @@ $app->get('/products/new', function(\Silex\Application $app) {
     // slows down the response, to challenge our Behat test! Silex is too fast otherwise!
     sleep(1);
 
-    return $app['twig']->render('_product_new.twig');
+    // render without an HTML body for AJAX
+    if ($app['request']->isXmlHttpRequest()) {
+        return $app['twig']->render('_product_new.twig');
+    }
+
+    return $app['twig']->render('product_new.twig');
 })
     ->bind('product_new');
 
