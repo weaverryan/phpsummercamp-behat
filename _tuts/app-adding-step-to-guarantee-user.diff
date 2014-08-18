@@ -1,0 +1,28 @@
+diff --git a/features/bootstrap/AppContext.php b/features/bootstrap/AppContext.php
+index 299d867..ea4781f 100644
+--- a/features/bootstrap/AppContext.php
++++ b/features/bootstrap/AppContext.php
+@@ -50,9 +50,6 @@ class AppContext implements SnippetAcceptingContext
+         }
+     }
+ 
+-    /**
+-     * @BeforeScenario
+-     */
+     public function clearData()
+     {
+         self::$app['user_repository']->emptyTable();
+diff --git a/features/product_admin.feature b/features/product_admin.feature
+index 0db7803..a088c54 100644
+--- a/features/product_admin.feature
++++ b/features/product_admin.feature
+@@ -4,7 +4,8 @@ Feature: Product admin
+   I need to be able to add, edit and delete products
+ 
+   Background:
+-    Given I am on "/login"
++    Given the admin user exists in the database
++    And I am on "/login"
+     And I fill in "Username" with "admin"
+     And I fill in "Password" with "admin"
+     And I press "Login"
