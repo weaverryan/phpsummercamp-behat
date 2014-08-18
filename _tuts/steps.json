@@ -74,7 +74,17 @@
             "id": "productadmin-background-to-login",
             "name": "ProductAdmin: Background to login",
             "description": null
+        },
+        {
+            "id": "app-bring-in-appcontext",
+            "name": "App: Bring in AppContext",
+            "description": null
+        },
+        {
+            "id": "app-adding-step-to-guarantee-user",
+            "name": "App: Adding step to guarantee user",
+            "description": null
         }
     ],
-    "sha": "6ec94cc0df4037db82feb5312e01de1e9d25e116"
+    "sha": "345fa8a1f78a6f04f9ad37701fa220252d347508"
 }
