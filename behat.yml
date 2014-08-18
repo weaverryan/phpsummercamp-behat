@@ -4,3 +4,9 @@ default:
             goutte: ~
             selenium2: ~
             base_url: http://localhost:8000/
+
+    suites:
+        default:
+            contexts:
+                - FeatureContext
+                - AppContext
