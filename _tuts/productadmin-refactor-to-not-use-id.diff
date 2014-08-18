@@ -1,0 +1,35 @@
+diff --git a/features/bootstrap/FeatureContext.php b/features/bootstrap/FeatureContext.php
+index 86ebcc1..ccc4d9f 100644
+--- a/features/bootstrap/FeatureContext.php
++++ b/features/bootstrap/FeatureContext.php
+@@ -55,4 +55,17 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
+     {
+         $this->clickLink($text);
+     }
++
++    /**
++     * @When I click the plus icon
++     */
++    public function iClickThePlusIcon()
++    {
++        $icon = $this->getSession()->getPage()->find('css', '.icon-plus-sign');
++        if (!$icon) {
++            throw new \Exception('Could not find a plus icon on this page!');
++        }
++
++        $icon->getParent()->click();
++    }
+ }
+diff --git a/features/product_admin.feature b/features/product_admin.feature
+index dc13bef..22718e7 100644
+--- a/features/product_admin.feature
++++ b/features/product_admin.feature
+@@ -11,7 +11,7 @@ Feature: Product admin
+ 
+   Scenario: Add a new product
+     Given I am on "/admin/products"
+-    When I click "new-product-link"
++    When I click the plus icon
+     And I fill in "Name" with "New prod"
+     And I fill in "Price" with "9.99"
+     And I fill in "Body" with "cool new product!"
