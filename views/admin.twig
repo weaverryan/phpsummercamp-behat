@@ -4,8 +4,12 @@
     <h1>Welcome!</h1>
 
     <p>
-        You can
-        <a href="{{ path('login') }}">login</a> if you want to, but you
-        can access the product admin section without logging in.
+        {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+            Well hallo there! You're logged in and ready to go!
+        {% else %}
+            You can
+            <a href="{{ path('login') }}">login</a> if you want to, but you
+            can access the product admin section without logging in.
+        {% endif %}
     </p>
 {% endblock %}
