@@ -4,7 +4,8 @@ Feature: Product admin
   I need to be able to add, edit and delete products
 
   Background:
-    Given I am on "/login"
+    Given the admin user exists in the database
+    And I am on "/login"
     And I fill in "Username" with "admin"
     And I fill in "Password" with "admin"
     And I press "Login"
