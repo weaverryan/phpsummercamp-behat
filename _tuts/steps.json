@@ -54,7 +54,27 @@
             "id": "productadmin-scenario-to-create-product-using-id",
             "name": "ProductAdmin: Scenario to create product (using id)",
             "description": null
+        },
+        {
+            "id": "productadmin-refactor-to-not-use-id",
+            "name": "ProductAdmin: Refactor to not use id",
+            "description": null
+        },
+        {
+            "id": "productadmin-showing-debuggings",
+            "name": "ProductAdmin: Showing debuggings",
+            "description": null
+        },
+        {
+            "id": "productadmin-removing-debugging",
+            "name": "ProductAdmin: Removing debugging",
+            "description": null
+        },
+        {
+            "id": "productadmin-background-to-login",
+            "name": "ProductAdmin: Background to login",
+            "description": null
         }
     ],
-    "sha": "6ca82c9d8d475ba994e36f17c341cda9e0704dc8"
+    "sha": "6ec94cc0df4037db82feb5312e01de1e9d25e116"
 }
