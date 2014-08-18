@@ -14,10 +14,10 @@ index 08780f5..0ce94a0 100644
 +                - AppContext
 diff --git a/features/bootstrap/AppContext.php b/features/bootstrap/AppContext.php
 new file mode 100644
-index 0000000..299d867
+index 0000000..bf4036b
 --- /dev/null
 +++ b/features/bootstrap/AppContext.php
-@@ -0,0 +1,98 @@
+@@ -0,0 +1,95 @@
 +<?php
 +
 +use Behat\Behat\Context\SnippetAcceptingContext;
@@ -49,7 +49,7 @@ index 0000000..299d867
 +    /**
 +     * @Given /^the admin user exists in the database$/
 +     */
-+    public function iAmLoggedInAsAnAdmin()
++    public function theAdminUserExistsInTheDatabase()
 +    {
 +        $this->currentUser = self::$app['user_repository']->createAdminUser(
 +            'admin',
@@ -70,9 +70,6 @@ index 0000000..299d867
 +        }
 +    }
 +
-+    /**
-+     * @BeforeScenario
-+     */
 +    public function clearData()
 +    {
 +        self::$app['user_repository']->emptyTable();
