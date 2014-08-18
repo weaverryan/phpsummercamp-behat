@@ -10,7 +10,7 @@ Feature: Product admin
     Then I should see "Showing All Products"
 
   Scenario: Add a new product
-    Given I am on "/products"
+    Given I am on "/admin/products"
     When I click the plus icon
     And I fill in "Name" with "New prod"
     And I fill in "Price" with "9.99"
