@@ -1,0 +1,30 @@
+diff --git a/features/bootstrap/FeatureContext.php b/features/bootstrap/FeatureContext.php
+index b4b1a5a..0d8cdfd 100644
+--- a/features/bootstrap/FeatureContext.php
++++ b/features/bootstrap/FeatureContext.php
+@@ -47,4 +47,12 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
+             throw new \Exception('Could not find text '.$text);
+         }
+     }
++
++    /**
++     * @When I click :text
++     */
++    public function iClick($text)
++    {
++        throw new PendingException();
++    }
+ }
+diff --git a/features/product_admin.feature b/features/product_admin.feature
+index c71e87d..07654e3 100644
+--- a/features/product_admin.feature
++++ b/features/product_admin.feature
+@@ -5,6 +5,6 @@ Feature: Product admin
+ 
+   Scenario: Seeing a list of existing products
+     Given I am on "/"
+-    When I follow "Admin"
+-    And I follow "Products"
++    When I click "Admin"
++    And I click "Products"
+     Then I should see "Showing All Products"

@@ -44,7 +44,12 @@
             "id": "productadmin-seeing-list-of-products-scenario",
             "name": "ProductAdmin: Seeing list of products scenario",
             "description": null
+        },
+        {
+            "id": "productadmin-adding-i-click",
+            "name": "ProductAdmin: Adding I click",
+            "description": null
         }
     ],
-    "sha": "ae033a625042bc343fcb94c4fcaa0deeb3dd9f4a"
+    "sha": "8a551c80733039af4071ffa0715d22036be4cc26"
 }

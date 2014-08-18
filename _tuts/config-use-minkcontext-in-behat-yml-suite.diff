@@ -1,14 +1,18 @@
-diff --git a/behat.yml b/behat.yml
-index 08780f5..d226eb8 100644
---- a/behat.yml
-+++ b/behat.yml
-@@ -4,3 +4,9 @@ default:
-             goutte: ~
-             selenium2: ~
-             base_url: http://localhost:8000/
-+
-+    suites:
-+        default:
-+            contexts:
-+                - FeatureContext
-+                - Behat\MinkExtension\Context\MinkContext
+diff --git a/features/bootstrap/FeatureContext.php b/features/bootstrap/FeatureContext.php
+index 023a5c4..b4b1a5a 100644
+--- a/features/bootstrap/FeatureContext.php
++++ b/features/bootstrap/FeatureContext.php
+@@ -3,11 +3,12 @@
+ use Behat\Behat\Context\SnippetAcceptingContext;
+ use Behat\Gherkin\Node\PyStringNode;
+ use Behat\Gherkin\Node\TableNode;
++use Behat\MinkExtension\Context\MinkContext;
+ 
+ /**
+  * Behat context class.
+  */
+-class FeatureContext implements SnippetAcceptingContext
++class FeatureContext extends MinkContext implements SnippetAcceptingContext
+ {
+     private $output;
+ 
