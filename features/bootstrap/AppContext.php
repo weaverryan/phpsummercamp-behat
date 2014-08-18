@@ -50,9 +50,6 @@ class AppContext implements SnippetAcceptingContext
         }
     }
 
-    /**
-     * @BeforeScenario
-     */
     public function clearData()
     {
         self::$app['user_repository']->emptyTable();
