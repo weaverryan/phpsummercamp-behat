@@ -15,5 +15,6 @@ Feature: Product admin
     And I fill in "Name" with "New prod"
     And I fill in "Price" with "9.99"
     And I fill in "Body" with "cool new product!"
-    And I press "Save"
+    And print last response
+    # And I press "Save"
     Then I should see "Product created FTW"
