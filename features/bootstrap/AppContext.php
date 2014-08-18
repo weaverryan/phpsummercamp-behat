@@ -29,7 +29,7 @@ class AppContext implements SnippetAcceptingContext
     /**
      * @Given /^the admin user exists in the database$/
      */
-    public function iAmLoggedInAsAnAdmin()
+    public function theAdminUserExistsInTheDatabase()
     {
         $this->currentUser = self::$app['user_repository']->createAdminUser(
             'admin',
