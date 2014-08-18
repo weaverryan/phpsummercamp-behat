@@ -49,7 +49,12 @@
             "id": "productadmin-adding-i-click",
             "name": "ProductAdmin: Adding I click",
             "description": null
+        },
+        {
+            "id": "productadmin-scenario-to-create-product-using-id",
+            "name": "ProductAdmin: Scenario to create product (using id)",
+            "description": null
         }
     ],
-    "sha": "8a551c80733039af4071ffa0715d22036be4cc26"
+    "sha": "6ca82c9d8d475ba994e36f17c341cda9e0704dc8"
 }
