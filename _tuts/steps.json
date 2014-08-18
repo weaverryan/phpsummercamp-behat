@@ -84,7 +84,12 @@
             "id": "app-adding-step-to-guarantee-user",
             "name": "App: Adding step to guarantee user",
             "description": null
+        },
+        {
+            "id": "app-add-beforescenario-to-clear-data",
+            "name": "App: Add BeforeScenario to clear data",
+            "description": null
         }
     ],
-    "sha": "345fa8a1f78a6f04f9ad37701fa220252d347508"
+    "sha": "4cdac5381c5e5c7c26587e9d14ccea8ac7798226"
 }
