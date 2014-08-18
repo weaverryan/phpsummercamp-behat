@@ -1,3 +1,17 @@
+diff --git a/app/bootstrap.php b/app/bootstrap.php
+index 99bbcac..38ecc0d 100644
+--- a/app/bootstrap.php
++++ b/app/bootstrap.php
+@@ -63,7 +63,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
+     )
+ ));
+ $app['security.access_rules'] = array(
+-//    array('^/admin', 'ROLE_ADMIN'),
++    array('^/admin', 'ROLE_ADMIN'),
+ );
+ 
+ return $app;
+\ No newline at end of file
 diff --git a/features/product_admin.feature b/features/product_admin.feature
 index 1cc37d4..0db7803 100644
 --- a/features/product_admin.feature
