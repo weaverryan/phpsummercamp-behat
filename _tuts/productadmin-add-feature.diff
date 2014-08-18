@@ -1,0 +1,10 @@
+diff --git a/features/product_admin.feature b/features/product_admin.feature
+new file mode 100644
+index 0000000..b385a48
+--- /dev/null
++++ b/features/product_admin.feature
+@@ -0,0 +1,4 @@
++Feature: Product admin
++  In order to manage the content on my site
++  As an admin
++  I need to be able to add, edit and delete products

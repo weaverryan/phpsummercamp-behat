@@ -1,0 +1,27 @@
+diff --git a/features/bootstrap/FeatureContext.php b/features/bootstrap/FeatureContext.php
+new file mode 100644
+index 0000000..8187283
+--- /dev/null
++++ b/features/bootstrap/FeatureContext.php
+@@ -0,0 +1,21 @@
++<?php
++
++use Behat\Behat\Context\SnippetAcceptingContext;
++use Behat\Gherkin\Node\PyStringNode;
++use Behat\Gherkin\Node\TableNode;
++
++/**
++ * Behat context class.
++ */
++class FeatureContext implements SnippetAcceptingContext
++{
++    /**
++     * Initializes context.
++     *
++     * Every scenario gets its own context object.
++     * You can also pass arbitrary arguments to the context constructor through behat.yml.
++     */
++    public function __construct()
++    {
++    }
++}

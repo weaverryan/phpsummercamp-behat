@@ -1,0 +1,14 @@
+diff --git a/behat.yml b/behat.yml
+index 08780f5..d226eb8 100644
+--- a/behat.yml
++++ b/behat.yml
+@@ -4,3 +4,9 @@ default:
+             goutte: ~
+             selenium2: ~
+             base_url: http://localhost:8000/
++
++    suites:
++        default:
++            contexts:
++                - FeatureContext
++                - Behat\MinkExtension\Context\MinkContext

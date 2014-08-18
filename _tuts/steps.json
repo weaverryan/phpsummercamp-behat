@@ -1,0 +1,50 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "install-behat-init",
+            "name": "Install: Behat init",
+            "description": null
+        },
+        {
+            "id": "ls-feature-scenario-and-empty-methods",
+            "name": "ls: Feature, Scenario and empty methods",
+            "description": null
+        },
+        {
+            "id": "ls-renaming-method-arguments",
+            "name": "ls: Renaming method arguments",
+            "description": null
+        },
+        {
+            "id": "ls-filling-in-methods",
+            "name": "ls: Filling in methods",
+            "description": null
+        },
+        {
+            "id": "config-add-minkextension-in-behat-yml",
+            "name": "Config: Add MinkExtension in behat.yml",
+            "description": null
+        },
+        {
+            "id": "config-use-minkcontext-in-behat-yml-suite",
+            "name": "Config: Use MinkContext in behat.yml suite",
+            "description": null
+        },
+        {
+            "id": "productadmin-add-feature",
+            "name": "ProductAdmin: Add feature",
+            "description": null
+        },
+        {
+            "id": "productadmin-seeing-list-of-products-scenario",
+            "name": "ProductAdmin: Seeing list of products scenario",
+            "description": null
+        }
+    ],
+    "sha": "ae033a625042bc343fcb94c4fcaa0deeb3dd9f4a"
+}

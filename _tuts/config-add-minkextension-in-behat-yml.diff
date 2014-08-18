@@ -1,0 +1,12 @@
+diff --git a/behat.yml b/behat.yml
+new file mode 100644
+index 0000000..08780f5
+--- /dev/null
++++ b/behat.yml
+@@ -0,0 +1,6 @@
++default:
++    extensions:
++        Behat\MinkExtension:
++            goutte: ~
++            selenium2: ~
++            base_url: http://localhost:8000/

@@ -1,0 +1,41 @@
+diff --git a/features/bootstrap/FeatureContext.php b/features/bootstrap/FeatureContext.php
+index d2ef046..023a5c4 100644
+--- a/features/bootstrap/FeatureContext.php
++++ b/features/bootstrap/FeatureContext.php
+@@ -9,6 +9,8 @@ use Behat\Gherkin\Node\TableNode;
+  */
+ class FeatureContext implements SnippetAcceptingContext
+ {
++    private $output;
++
+     /**
+      * Initializes context.
+      *
+@@ -24,7 +26,7 @@ class FeatureContext implements SnippetAcceptingContext
+      */
+     public function iHaveAFileNamed($file)
+     {
+-        throw new PendingException();
++        touch($file);
+     }
+ 
+     /**
+@@ -32,7 +34,7 @@ class FeatureContext implements SnippetAcceptingContext
+      */
+     public function iRun($command)
+     {
+-        throw new PendingException();
++        $this->output = shell_exec($command);
+     }
+ 
+     /**
+@@ -40,6 +42,8 @@ class FeatureContext implements SnippetAcceptingContext
+      */
+     public function iShouldSeeInTheOutput($text)
+     {
+-        throw new PendingException();
++        if (strpos($this->output, $text) === false) {
++            throw new \Exception('Could not find text '.$text);
++        }
+     }
+ }
