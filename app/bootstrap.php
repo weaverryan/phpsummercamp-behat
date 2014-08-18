@@ -62,9 +62,5 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
         ),
     )
 ));
-// access controls
-$app['security.access_rules'] = array(
-    array('^/admin', 'ROLE_ADMIN'),
-);
 
 return $app;
