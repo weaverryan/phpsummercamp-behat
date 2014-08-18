@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "861f340af85aa59ec892964647a39e07",
+    "hash": "b1675d3783aca2d209eeec49f7498c71",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1411,16 +1411,16 @@
         },
         {
             "name": "behat/mink-extension",
-            "version": "dev-master",
+            "version": "v2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/MinkExtension.git",
-                "reference": "a680dada39752dd1086c3c706a56645ddb1ec8d9"
+                "reference": "5dcc001aac5f6711c09a5f8b4328af9c3182bc4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/a680dada39752dd1086c3c706a56645ddb1ec8d9",
-                "reference": "a680dada39752dd1086c3c706a56645ddb1ec8d9",
+                "url": "https://api.github.com/repos/Behat/MinkExtension/zipball/5dcc001aac5f6711c09a5f8b4328af9c3182bc4c",
+                "reference": "5dcc001aac5f6711c09a5f8b4328af9c3182bc4c",
                 "shasum": ""
             },
             "require": {
@@ -1466,7 +1466,7 @@
                 "test",
                 "web"
             ],
-            "time": "2014-08-12 17:51:50"
+            "time": "2014-08-05 06:12:07"
         },
         {
             "name": "behat/mink-goutte-driver",
@@ -2548,9 +2548,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "behat/mink-extension": 20
-    },
+    "stability-flags": [
+
+    ],
     "prefer-stable": false,
     "platform": [
 
