@@ -62,9 +62,10 @@
                         Actions
                     </li>
                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
-                        <li><a href="{{ path('admin_logout') }}"></i>Logout</a></li>
+                        <li><a href="{{ path('admin_logout') }}">Logout</a></li>
                     {% endif %}
-                    <li><a href="{{ path('db_rebuild', {'_format': 'json'}) }}"></i>Reset DB</a></li>
+                    <li><a href="{{ path('db_rebuild', {'_format': 'json'}) }}">Reload DB</a></li>
+                    <li><a href="{{ path('db_rebuild', {'_format': 'json', 'fixtures': false}) }}">Empty DB</a></li>
                 </ul>
             </div>
             {% endblock %}
