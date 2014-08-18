@@ -2,6 +2,7 @@
 /** @var $app \Silex\Application */
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Controllers and routes
@@ -55,7 +56,7 @@ $app->get('/login', function(Request $request) use ($app) {
 /**
  * Internal routes for resetting things
  */
-$app->get('/_db/rebuild.{_format}', function(\Silex\Application $app, Request $request) {
+$app->get('/_db/rebuild', function(\Silex\Application $app, Request $request) {
     $app['schema_manager']->rebuildSchema();
 
     $withFixtures = !$request->query->has('fixtures') || $request->query->get('fixtures');
@@ -64,10 +65,9 @@ $app->get('/_db/rebuild.{_format}', function(\Silex\Application $app, Request $r
         $app['schema_manager']->loadFixtures();
     }
 
-    return json_encode(array(
+    return new JsonResponse(array(
         'success' => true
     ));
 })
     ->bind('db_rebuild')
-    ->assert('_format', 'json')
 ;

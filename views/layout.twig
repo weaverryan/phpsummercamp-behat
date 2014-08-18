@@ -64,7 +64,7 @@
                     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                         <li><a href="{{ path('admin_logout') }}"></i>Logout</a></li>
                     {% endif %}
-                    <li><a href="/_db/rebuild.json"></i>Reset DB</a></li>
+                    <li><a href="{{ path('db_rebuild', {'_format': 'json'}) }}"></i>Reset DB</a></li>
                 </ul>
             </div>
             {% endblock %}
