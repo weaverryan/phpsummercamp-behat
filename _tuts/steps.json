@@ -32,7 +32,7 @@
         },
         {
             "id": "config-use-minkcontext-in-behat-yml-suite",
-            "name": "Config: Use MinkContext in behat.yml suite",
+            "name": "Config: Extend MinkContext class",
             "description": null
         },
         {
