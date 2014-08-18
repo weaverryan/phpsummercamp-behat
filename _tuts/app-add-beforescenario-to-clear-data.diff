@@ -1,0 +1,14 @@
+diff --git a/features/bootstrap/AppContext.php b/features/bootstrap/AppContext.php
+index bf4036b..eccf67e 100644
+--- a/features/bootstrap/AppContext.php
++++ b/features/bootstrap/AppContext.php
+@@ -50,6 +50,9 @@ class AppContext implements SnippetAcceptingContext
+         }
+     }
+ 
++    /**
++     * @BeforeScenario
++     */
+     public function clearData()
+     {
+         self::$app['user_repository']->emptyTable();
