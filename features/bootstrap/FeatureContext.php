@@ -55,4 +55,17 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
     {
         $this->clickLink($text);
     }
+
+    /**
+     * @When I click the plus icon
+     */
+    public function iClickThePlusIcon()
+    {
+        $icon = $this->getSession()->getPage()->find('css', '.icon-plus-sign');
+        if (!$icon) {
+            throw new \Exception('Could not find a plus icon on this page!');
+        }
+
+        $icon->getParent()->click();
+    }
 }

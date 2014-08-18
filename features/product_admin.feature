@@ -11,7 +11,7 @@ Feature: Product admin
 
   Scenario: Add a new product
     Given I am on "/products"
-    When I click "new-product-link"
+    When I click the plus icon
     And I fill in "Name" with "New prod"
     And I fill in "Price" with "9.99"
     And I fill in "Body" with "cool new product!"
