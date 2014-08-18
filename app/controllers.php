@@ -71,7 +71,8 @@ $app->get('/_db/rebuild', function(\Silex\Application $app, Request $request) {
     }
 
     return new JsonResponse(array(
-        'success' => true
+        'success' => true,
+        'reloaded_data' => $withFixtures,
     ));
 })
     ->bind('db_rebuild')
