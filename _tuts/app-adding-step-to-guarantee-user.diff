@@ -1,17 +1,3 @@
-diff --git a/features/bootstrap/AppContext.php b/features/bootstrap/AppContext.php
-index 299d867..ea4781f 100644
---- a/features/bootstrap/AppContext.php
-+++ b/features/bootstrap/AppContext.php
-@@ -50,9 +50,6 @@ class AppContext implements SnippetAcceptingContext
-         }
-     }
- 
--    /**
--     * @BeforeScenario
--     */
-     public function clearData()
-     {
-         self::$app['user_repository']->emptyTable();
 diff --git a/features/product_admin.feature b/features/product_admin.feature
 index 0db7803..a088c54 100644
 --- a/features/product_admin.feature
