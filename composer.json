@@ -13,5 +13,8 @@
     },
     "autoload": {
         "psr-0": {"RaptorStore": "src/"}
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
