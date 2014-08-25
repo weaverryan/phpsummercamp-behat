@@ -28,7 +28,7 @@ Here's the high-level plan:
 
 - Copy in `behat.yml` from `resources/behat.yml` to initialize `MinkExtension`.
 - Extend `MinkContext`.
-- Show every behat -dl.
+- Show every definition/step that we have so far:  behat -dl.
 
 ### Step 5
 
