@@ -3,4 +3,4 @@ default:
         Behat\MinkExtension:
             goutte: ~
             selenium2: ~
-            base_url: http://localhost:8000/
+            base_url: http://behat.ezsc/
