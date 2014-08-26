@@ -14,3 +14,8 @@ D) List your built-in "definitions" again!
 
 You should see *a lot* more built-in definitions: tools
 we can use to write scenarios!
+
+**EXTRA CREDIT**
+
+* Find out where these built-in definitions come from by
+opening up the `MinkContext` class. 
