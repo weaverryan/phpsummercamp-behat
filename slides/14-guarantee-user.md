@@ -15,3 +15,8 @@ D) Run-run Behat
 
 The tests should once again pass, even though there may or may
 not be an admin user in the database before each scenario.
+
+**EXTRA CREDIT**
+
+* Add a new feature file (`login.feature`) and a new scenario that tests
+that the "Logout" link works.
