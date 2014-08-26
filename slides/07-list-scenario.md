@@ -16,3 +16,8 @@ B) Execute your scenario!
 **GOAL**
 
 If you did everything correctly, the test should pass!
+
+**EXTRA CREDIT**
+
+* Add another assertion (i.e. THEN) to check that you're
+on the right URL.
