@@ -1,4 +1,5 @@
 #### Step 14: Guarantee the user
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Click the "Empty Database" link on the site in your browser
 

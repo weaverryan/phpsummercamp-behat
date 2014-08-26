@@ -1,4 +1,5 @@
 #### Step 8 - Click instead of follow
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Change your scenario to use "I click" instead of "I follow"
 

@@ -1,4 +1,5 @@
 #### Step 6 - Product Admin Feature
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Create a new file `features/product_admin.feature`
 

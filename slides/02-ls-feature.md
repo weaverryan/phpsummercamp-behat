@@ -1,4 +1,5 @@
 #### Step 2 - The ls Feature
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Copy the `resources/ls.feature` file to `features/ls.feature`
 

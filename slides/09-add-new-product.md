@@ -1,4 +1,5 @@
 #### Step 9 - Scenario to add a new product
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Create another scenario in `product_admin.feature` for
 creating a new product:

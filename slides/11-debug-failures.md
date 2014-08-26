@@ -1,5 +1,5 @@
 #### Step 11 - Login and Debugging
-
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Uncomment out line 66 in `app/bootstrap.php`:
 

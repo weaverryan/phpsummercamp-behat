@@ -1,5 +1,5 @@
 #### Step 12 - Background to Login
-
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Add a `Background` section above the scenarios in
 `product_admin.feature` that enter the username, password

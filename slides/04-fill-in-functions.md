@@ -1,4 +1,5 @@
 #### Step 4 - Fill in those functions!
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Make the `iHaveAFileNamed` do what it says!
 

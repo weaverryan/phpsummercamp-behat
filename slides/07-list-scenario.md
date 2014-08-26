@@ -1,4 +1,5 @@
 #### Step 7 - Product Admin List Scenario
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Add a new scenario for the following situation
 beneath your feature definition in `product_admin.feature`:

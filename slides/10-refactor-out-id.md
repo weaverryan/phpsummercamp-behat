@@ -1,4 +1,5 @@
 #### Step 10 - Refactor out the id!
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Change the step in the scenario to *not* reference the id!
 

@@ -1,4 +1,5 @@
 #### Step 5 - Tell Behat about MinkExtension
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) List all of your built-in "definitions"
 `php bin/behat -dl`

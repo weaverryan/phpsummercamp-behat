@@ -1,4 +1,5 @@
 #### Step 15 - BeforeScenario to Clear Data
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Find the `clearData` in `AppContext.php` and add a `@BeforeScenario`
 annotation above it:

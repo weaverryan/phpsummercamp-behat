@@ -1,4 +1,5 @@
 #### Step 13 - AppContext
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Copy `resources/AppContext.php` into `features/bootstrap/`
 

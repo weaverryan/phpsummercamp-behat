@@ -1,4 +1,5 @@
 #### Step 1 - Initialize Behat!
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) Run `php bin/behat --init`
 

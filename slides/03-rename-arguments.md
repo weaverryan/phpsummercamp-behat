@@ -1,4 +1,5 @@
 #### Step 3 - Rename arguments
+Stuck? http://bit.ly/summer-behat-stuck
 
 A) In `FeatureContext`, change the annotations and arguments
 for each method to be friendlier!
