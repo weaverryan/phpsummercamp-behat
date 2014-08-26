@@ -21,3 +21,12 @@ C) Run `php bin/behat -dl` to see some new built-in definitions
 When you list the built-in definitions (C), you should
 see some new ones, like:
 `the admin user exists in the database`
+
+**EXTRA CREDIT**
+
+* Add new `Given` to the first "list" scenario that guarantees that
+there are 5 products in the database (`there are 5 products`)
+
+* Add a new `And there are 5 products in the table` step at the end. Run
+Behat, copy in the new function, then use Mink to find the table and make
+sure there are 5 rows in it.

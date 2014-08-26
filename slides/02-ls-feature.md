@@ -10,4 +10,3 @@ C) Copy the methods into `feature/bootstrap/FeatureContext.php`
 
 You should have some new methods in `FeatureContext`
 that all say `throw new PendingException();`
-
