@@ -22,3 +22,8 @@ After:
 **GOAL**
 
 Nothing is different - but things are a little prettier :)
+
+**EXTRA CREDIT**
+
+* Add the missing `use` statement for `PendingException`
+and re-run Behat to see that it shows 1 "pending" scenario
