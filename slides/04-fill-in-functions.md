@@ -33,3 +33,10 @@ D) Re-run behat! `php bin/behat`
 **GOAL**
 
 The tests should actually pass! You should see green!
+
+**EXTRA CREDIT**
+
+* Change your logic slightly (i.e. break it) so that the
+test actually fails!
+
+* Use the `@AfterScenario` hook to delete the files you created
