@@ -16,3 +16,9 @@ B) Re-run behat `php bin/behat`
 **GOAL**
 
 And *this* new scenario should pass too!
+
+**EXTRA CREDIT**
+
+* Use the `When I fill in the following:` format to fill
+in the 3 fields (instead of filling them in one-by-one)
+
